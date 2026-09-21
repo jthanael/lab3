@@ -1,0 +1,85 @@
+'''
+Lab: Grocery List Application
+In this lab, you will practice using Python Objects to create a shopping list application.
+
+
+
+Learning Outcomes
+Upon completion of this assignment, you will know how to:
+
+Follow software requirements.
+Write an interactive console-based Python program.
+Use f-strings to interpolate variables into output.
+Store and retrieve objects from lists.
+Interpolate variables into output with f-strings.
+Push code changes to a Git repository.
+
+
+Repo Preparation
+In your mwcc-cis109 repo directory, create a new subdirectory named lab03.
+
+
+
+Software Requirements
+##1. Upon startup, the program MUST displays the following menu to the terminal window:
+
+Welcome to Your Shopping List!
+ 
+Please make a selection from one of the following options:
+ 
+1. Add an item to the shopping list.
+2. Display the shopping list.
+3. Display the item count.
+4. Display the first item in the shopping list.
+5. Display the last item in the shopping list.
+4. Clear the shopping list.
+ 
+Selection: 
+
+
+2. Upon selecting option #1 from the menu, the program MUST prompt the user to add an item to a Python list object called grocery_list. After the user enters an item, the program MUST add the item to grocery_list.
+
+Item to add: 
+
+
+#3. Upon selecting option #2 from the menu, the program MUST display the items in grocery_list.
+
+['apple', 'bannana', 'cranberries']
+
+
+#4. Upon selecting option #3 from the menu, the program MUST display the count of items in grocery_list using an F-String.
+
+ITEM COUNT: 10
+
+
+#5. Upon selecting option #4 from the menu, the program MUST display the first item in grocery_list using an F-String.
+
+FIRST ITEM: apple
+
+
+#6. Upon selecting option #5 from the menu, the program MUST display the last item in grocery_list using an F-String.
+
+LAST ITEM: cranberries
+
+
+7. Upon selecting option #6 from the menu, the program MUST remove all the items from grocery_list. Hint: Set the list variable to an empty list.
+
+
+
+8. Upon entering input other than 1 through 4, the program MUST display the following message:
+
+You entered an invalid option.
+Goodbye!
+
+
+9. A main program loop MAY be implemented, but it is not required for this lab.
+
+
+
+Check In Your Code!
+Stage and commit your changes and synchronize/push your code update to GitHub.
+
+
+
+Deliverable
+Submit to Blackboard the URL to the new folder on GitHub.'''
