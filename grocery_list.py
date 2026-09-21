@@ -6,3 +6,5 @@ while (True):
     grocery_List = []
     print("Welcome to the Grocery List Application!")
     print("Please make a selection from the following options:")
+
+    
