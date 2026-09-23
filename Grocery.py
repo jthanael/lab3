@@ -1,22 +1,63 @@
-grocery = []
+# Thanael Jean-Philippe
+# mwcc-cis109
+# Lab03 grocery-list
 
-print("Welcome to Your Shopping List!")
+grocery_list =[]
 
-while True:
+while(True):
+    print(f'''
+    Welcome to Your Shopping List!
+    Please make a selection from one of the following options:
 
-    print = int(input("Please make a selection from one of the following options:"))
-    list = '''
-1. Add an item to the shopping list.
-2. Display the shopping list.
-3. Display the item count.
-4. Display the first item in the shopping list.
-5. Display the last item in the shopping list.
-4. Clear the shopping list.'''
+    1. Add an item to the shopping list.
+    2. Display the shopping list.
+    3. Display the item count.
+    4. Display the first item in the shopping list.
+    5. Display the last item in the shopping list.
+    6. Clear the shopping list.
+    7. Exit''')
 
 
-print(list)
-selection  = input("Enter your selection: ") 
+    selection = input("Selection: ")
 
-if selection == "1":
-    list_item = input("Enter the item you would like to add: ")
-    grocery.append(list_item)
+    if selection == "1": 
+        item = input("Item to add: ") 
+        grocery_list.append(item) 
+        input("Hit [enter] to continue...")
+        continue
+
+    elif selection == "2": 
+        print(grocery_list)
+        input("Hit [enter] to continue...")
+        continue 
+
+    elif selection == "3": 
+        print(f"ITEM COUNT: {len(grocery_list)}")
+        input("Hit [enter] to continue...")
+        continue
+
+    elif selection == "4":  
+            print(f"FIRST ITEM: {grocery_list[0]}")
+            input("Hit [enter] to continue...")
+            continue 
+
+    elif selection == "5":
+        print(f"FIRST ITEM: {grocery_list[-1]}")
+        input("Hit [enter] to continue...")
+        continue
+
+    elif selection == "6":
+        grocery_list =[]
+        print(f"The shopping list is now empty")
+        input("Hit [enter] to continue...")
+        continue
+
+    elif selection == "7":
+        print("Goodbye")
+        exit()
+        
+
+    else:
+        print(f"You entered an invalid option.\nPlease try again!")
+        input("Hit [enter] to continue...")
+        continue
